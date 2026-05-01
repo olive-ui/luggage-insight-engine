@@ -63,3 +63,12 @@ No pricing or rating-based analysis included
 
 Future improvements include aspect-based sentiment analysis, anomaly detection, and richer product-level insights
 
+## Architecture
+
+Scraper (Playwright)
+→ Raw Data (CSV)
+→ Cleaning (Pandas)
+→ Sentiment Analysis (TextBlob)
+→ Final Dataset
+→ Streamlit Dashboard
+
