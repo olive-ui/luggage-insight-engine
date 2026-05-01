@@ -2,33 +2,64 @@
 
 ## Overview
 
-This project explores customer reviews of popular luggage brands using web scraping, basic NLP, and visualization. The aim was to understand how customers actually feel about different brands and identify common strengths and issues from their feedback.
+This project analyzes customer reviews of major luggage brands using web scraping, data cleaning, sentiment analysis, and an interactive dashboard.
 
-## Features
+It helps identify customer satisfaction trends, common complaints, and strengths across brands.
 
-Collected real product and review data using web scraping
-Cleaned and structured raw text data
-Performed sentiment analysis with positive, negative, and neutral classification
-Built an interactive dashboard to visualize insights
-Extracted common complaint keywords from negative reviews
+---
 
-## Tech Stack
-
-Python, Pandas, Playwright, TextBlob, Streamlit, Plotly
-
-## Key Insights
-
-Most brands show a high level of positive sentiment
-Common issues include wheels, handles, and zipper durability
-Value for money appears frequently in positive feedback
-Some brands are more consistent in customer satisfaction than others
-
-## How to Run
+## Run
 
 ```bash
+pip install -r requirements.txt
 py -m streamlit run ui/app.py
 ```
 
-## Notes
+The dashboard uses the cleaned dataset from `data/curated/final.csv`.
 
-This project focuses on building a complete pipeline from data collection to insight generation. It highlights working with real world data and presenting meaningful patterns in a simple and interactive way.
+---
+
+## Pipeline
+
+Data Collection → Data Cleaning → Sentiment Analysis → Insight Extraction → Dashboard Visualization
+
+---
+
+## Features
+
+Scraped real product reviews
+Cleaned and structured dataset
+Sentiment classification (positive, neutral, negative)
+Brand comparison and insights
+Top complaints and positive themes
+Interactive dashboard with filters
+
+---
+
+## Key Insights
+
+Most brands show strong positive sentiment
+Value for money is a dominant positive factor
+Common issues include durability of wheels, handles, and zippers
+
+---
+
+## Tech Stack
+
+Python
+Pandas
+Playwright
+TextBlob
+Streamlit
+Plotly
+
+---
+
+## Limitations and Future Work
+
+Limited number of products and reviews
+Basic sentiment model without deep context understanding
+No pricing or rating-based analysis included
+
+Future improvements include aspect-based sentiment analysis, anomaly detection, and richer product-level insights
+
